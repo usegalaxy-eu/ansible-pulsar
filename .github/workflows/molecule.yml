@@ -45,5 +45,3 @@ jobs:
           image: "${{ matrix.image }}"
           tag: "latest"
           options: "--parallel all"
-        env:
-          MOLECULE_DOCKER_IMAGE: "${{ matrix.image }}:latest"
