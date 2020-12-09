@@ -30,6 +30,7 @@ jobs:
         image:
           ##- geerlingguy/docker-ubuntu2004-ansible:latest
           - geerlingguy/docker-ubuntu1804-ansible
+            tag
           - geerlingguy/docker-ubuntu1604-ansible
           ##- geerlingguy/docker-centos8-ansible:latest
           - geerlingguy/docker-centos7-ansible
@@ -42,6 +43,7 @@ jobs:
         uses: robertdebock/molecule-action@2.6.6
         with:
           image: "${{ matrix.image }}"
+          tag: "latest"
           options: "--parallel all"
         env:
           MOLECULE_DOCKER_IMAGE: "${{ matrix.image }}"
