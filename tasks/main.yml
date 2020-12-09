@@ -2,7 +2,7 @@
 # tasks file for galaxyproject.pulsar
 
 # Deploy a Pulsar server
-#   http://pulsar.readthedocs.org/
+#   http://pulsar.readthedocs.org
 
 - name: Create/update virtualenv
   pip:
